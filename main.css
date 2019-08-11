@@ -1,0 +1,75 @@
+.page-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.box-container
+{
+    margin: auto;
+    margin-top: 35vh;
+    text-align:center;
+    width: 210px;
+    height: 210px;
+    position: relative;
+}
+
+.box1 {
+    background-color: #F44E24;
+    height: 100px;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+.box2 {
+    background-color: #81B900;
+    height: 100px;
+    width: 100px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+.box3 {
+    background-color: #01A4EF;
+    height: 100px;
+    width: 100px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+.box4 {
+    background-color: #FFB902;
+    height: 100px;
+    width: 100px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+
+
+@keyframes spin {
+    0%{
+        transform: rotate(90deg);
+    }
+    25% {
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
