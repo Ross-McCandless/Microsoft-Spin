@@ -9,53 +9,50 @@
     margin: auto;
     margin-top: 35vh;
     text-align:center;
-    width: 210px;
-    height: 210px;
+    width: 105px;
+    height: 105px;
     position: relative;
 }
 
 .box1 {
     background-color: #F44E24;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     left: 0px;
     top: 0px;
     position: absolute;
-    animation-name: spin;
-    animation-duration: 2s;
+    animation: spin 3s infinite;
 }
 
 .box2 {
     background-color: #81B900;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     right: 0px;
     top: 0px;
     position: absolute;
-    animation-name: spin;
-    animation-duration: 2s;
+    animation: spin 3s infinite;
+    
 }
 
 .box3 {
     background-color: #01A4EF;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     bottom: 0px;
     left: 0px;
     position: absolute;
-    animation-name: spin;
-    animation-duration: 2s;
+    animation: spin 3s infinite;
 }
 
 .box4 {
     background-color: #FFB902;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     bottom: 0px;
     right: 0px;
     position: absolute;
-    animation-name: spin;
-    animation-duration: 2s;
+    animation: spin 3s infinite;
 }
 
 
@@ -63,13 +60,13 @@
     0%{
         transform: rotate(90deg);
     }
-    25% {
+    20% {
         transform: rotate(180deg);
     }
-    50%{
+    40%{
         transform: rotate(270deg);
     }
-    100% {
+    60%, 100% {
         transform: rotate(360deg);
     }
 }
